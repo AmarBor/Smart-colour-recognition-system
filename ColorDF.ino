@@ -12,9 +12,7 @@ const int s1=5;
 const int s2=6;
 const int s3=7;
 const int sensorData=8;
-const int ledRed=10;
-const int ledGreen=11;
-const int ledBlue=12;
+
 // Global variable to store data
 
 int dataR=0;
@@ -82,73 +80,65 @@ void loop()
    
    if(isRed())
    {
-    myDFPlayer.playFolder(1, 3);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 3); 
     Serial.println("this is the RED color");
     delay(3000);
     
-   // analogWrite(ledRed,255);
-    //analogWrite(ledGreen,0);
-  //  analogWrite(ledBlue,0);
    }
 
     if(isRed2())
    {
-    myDFPlayer.playFolder(1, 3);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 3);  
     Serial.println("this is the RED color");
     delay(3000);
    }
    if(isBlue())
    {
-    myDFPlayer.playFolder(1, 5);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 5);  
     Serial.println("this is the Blue color");
     delay(3000);
     
    }
      if(isBlue2())
    {
-    myDFPlayer.playFolder(1, 5);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 5); 
     Serial.println("this is the Blue color");
     delay(3000);
     
    }
    if(isGreen())
    {
-    myDFPlayer.playFolder(1, 4);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 4); 
     Serial.println("this is the GREEN color");
     delay(3000);
     
-   // analogWrite(ledRed,0);
-   // analogWrite(ledGreen,255);
-   // analogWrite(ledBlue,0);
    }
 
     if(isGreen2())
    {
-    myDFPlayer.playFolder(1, 4);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 4);  
     Serial.println("this is the GREEN color");
     delay(3000);
    }
 
    if(isGreen3())
    {
-    myDFPlayer.playFolder(1, 4);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 4); 
     Serial.println("this is the GREEN color");
     delay(3000);
    }
    if(isYellow())
    {
-    myDFPlayer.playFolder(1, 6);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 6); 
     Serial.println("this is the YELLOW color");
     delay(3000);
     
-    //analogWrite(ledRed,255);
-    //analogWrite(ledGreen,224);
-    //analogWrite(ledBlue,0);
+    
    }
 
   if(isYellow2())
    {
-    myDFPlayer.playFolder(1, 6);  //play specific mp3 in SD:/15/004.mp3; Folder Name(1~99); File Name(1~255)
+    myDFPlayer.playFolder(1, 6);  
     Serial.println("this is the YELLOW color");
     delay(3000);
    }
